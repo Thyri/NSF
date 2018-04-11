@@ -1,0 +1,1 @@
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpts:blackjack:65535 ctstate NEW

@@ -1,0 +1,8 @@
+Chain IN_FedoraWorkstation_allow (1 references)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:ssh ctstate NEW
+ACCEPT     udp  --  anywhere             anywhere             udp dpt:netbios-ns ctstate NEW
+ACCEPT     udp  --  anywhere             anywhere             udp dpt:netbios-dgm ctstate NEW
+ACCEPT     udp  --  anywhere             224.0.0.251          udp dpt:mdns ctstate NEW
+ACCEPT     udp  --  anywhere             anywhere             udp dpts:blackjack:65535 ctstate NEW
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpts:blackjack:65535 ctstate NEW
